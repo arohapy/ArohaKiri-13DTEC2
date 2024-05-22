@@ -1,0 +1,44 @@
+/*---COLOUR PALLETE-----
+OFF-WHITE: #edffec
+ORANGE: #ff9c70
+ACCENT DARK: #5b5767
+ACCENT DARKER: #48435c
+-----COLOUR PALLETE---*/
+
+@font-face {
+    font-family: 'MADEVoyager';
+    src: url('font/MADEVoyager-Medium.otf');
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #5b5767;
+    padding: 3px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.bar-item {
+    color: #ff9c70;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-family: 'MADEVoyager';
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    max-height: 50px; 
+    height: auto;
+    width: auto;
+}
+
+.bar-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
