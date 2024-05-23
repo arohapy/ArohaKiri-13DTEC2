@@ -16,9 +16,8 @@ body {
 
 .navbar {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     background-color: #5b5767;
-    padding: 3px;
     box-sizing: border-box;
     width: 100%;
 }
@@ -26,17 +25,26 @@ body {
 .bar-item {
     color: #ff9c70;
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 7px;
+    font-size: 20px;
     font-family: 'MADEVoyager';
-    padding: 0 14px;
     display: flex;
     align-items: center;
 }
 
-.nav-logo img {
-    max-height: 50px; 
-    height: auto;
-    width: auto;
+.nav-drop{
+    padding: 0 14px;
+}
+
+.nav-logo{
+
+    img {
+        background-color: #edffec;
+        max-height: 60px; 
+        height: auto;
+        width: auto;
+        padding: 0 10px;
+    }
 }
 
 .bar-item:hover {
