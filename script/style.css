@@ -8,10 +8,14 @@ ACCENT DARKER: #48435c
 @font-face {
     font-family: 'MADEVoyager';
     src: url('font/MADEVoyager-Medium.otf');
+
+    font-family: 'MADESunflower';
+    src: url('font/MadeSunflower.otf');
 }
 
 body {
     margin: 0;
+    padding: 0;
 }
 /* NAVBAR */
 .navbar {
@@ -34,7 +38,6 @@ body {
 
 .nav-drop{
     padding: 0 16px;
-    padding-bottom: 3px;
 }
 
 .nav-logo{
@@ -43,7 +46,6 @@ body {
         max-height: 60px; 
         height: auto;
         width: auto;
-        padding: 0 10px;
     }
 }
 
@@ -58,17 +60,50 @@ body {
 .content{
     display: grid;
     grid-template-columns: 50%, 50%;
-    grid-gap: 10px;
-    justify-content: center;
+    justify-content: top;
+    background-color: #edffec;
 }
 
 .header{
     grid-column: 1/ span 2;
+    position: relative;
     #header-img{
         width: 100%;
-        filter: brightness(50%)
+        filter: brightness(50%);
+        display: block;
     }
-    h{
+    .title{
         white-space: pre-line;
+        position: absolute;
+        color: #edffec;
+        font-family: 'MADESunflower';
+        font-size: 120px;
+        top: 50%;
+        left: 270px;
+        line-height: 120px;
+        transform: translate(-50%, -50%);
     }
 } 
+
+/* GRID */
+
+/* Elements */
+
+.menu{
+    filter: brightness(50%);
+}
+
+.menuitems{
+    position: relative;
+    text-align: center;
+}
+
+.menutext{
+    font-size: 20px;
+    font-family: 'MADESunflower';
+    color: #edffec;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
