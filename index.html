@@ -1,34 +1,57 @@
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HVHS Canteen</title>
+  
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="#" class="bar-item nav-logo">
+      <img alt="HVHS Logo image." src="img/hvhslogo.png">
+    </a>
+    <a href="menu.html" class="bar-item nav-drop">Menu</a>
+    <a href="contact.html" class="bar-item nav-drop">Contact</a>
+  </div>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HVHS Canteen</title>
-    <link rel="stylesheet" href="script/style.css">
-  </head>
+  <div class="header">
+    <img id="header-img" src="img/header-img.jpg" alt="Header Image">
+    <div class="title">HVHS
+      Canteen</div>
+  </div>
 
-  <body>
-    <div class="navbar">
-      <a href="#" class="bar-item nav-logo">
-        <img alt="HVHS Logo image." src="img/hvhslogo.png">
-      </a>
-      <a href="menu.html" class="bar-item nav-drop">Menu</a>
-      <a href="contact.html" class="bar-item nav-drop">Contact</a>
-    </div>
-
-    <div class="header">
-      <img id="header-img" src="img/header-img.jpg" alt="Header Image">
-      <div class="title">HVHS
-        Canteen</div>
-    </div>
-
-    <div class="content">
-      <div id="menuitems">
+  <div class="content">
+    <div id="menuitems">
+      <div class='menu-container' id="savoury" onclick="location.href = 'html/savoury.html';">
         <img class="menu" src="img/meatpie.jpg" alt="Meat Pie">
         <div class="menutext">Savoury</div>
       </div>
+      <div class='menu-container' id="sweets" onclick="location.href = 'html/sweets.html';">
+        <img class="menu" src="img/cookie.jpg" alt="Cookies on a tray">
+        <div class="menutext">Sweets</div>
+      </div>
+      <div class='menu-container' id="drinks" onclick="location.href = 'html/drinks.html';">
+        <img class="menu" src="img/drinks.jpg" alt="Drink fridge">
+        <div class="menutext">Drinks</div>
+      </div>
     </div>
-  </body>
 
-  </html>
+    <hr class="solid">
+
+    <div class="main-content">
+      <p>The HVHS canteen is a home for great food, nutrition, and reliability. No matter what happens, we are there for our students. Our wide menu range means that there is something for everyone, ensuring that everyone can study with a full and happy stomach. 
+      We are open every interval and lunchtime, so stop by!</p>
+
+      <div class="gallery-container">
+        <img src="img/gallery/topL.jpg" id="topL" alt="">
+        <img src="img/gallery/btmL.jpg" id="btmL" alt="">
+        <img src="img/gallery/topR.jpg" id="topR" alt="">
+        <img src="img/gallery/btmM.jpg" id="btmM" alt="">
+        <img src="img/gallery/btmR.jpg" id="btmR" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
