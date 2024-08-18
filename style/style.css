@@ -66,6 +66,7 @@ body {
 .header{
     grid-column: 1/ span 2;
     position: relative;
+    display: grid;
     #header-img{
         width: 100%;
         filter: brightness(80%);
@@ -152,7 +153,7 @@ hr.solid {
 
 /* PARAGRAPH AND GALLERY */
 
-p{
+#paragraph{
     margin: 4% 4% 4% 20%;
     white-space: pre-line;
     color: #5b5767;
@@ -212,7 +213,7 @@ p{
     background-color: #48435c;
     font-family: 'MADEVoyager';
     letter-spacing: 1px;
-    line-height: 40px;
+    line-height: 30px;
     padding: 0px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -220,19 +221,77 @@ p{
     font-size: 15px;
     color: #ff9c70;
     display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
+    justify-items: center;
+    text-align: center; 
+    grid-template-columns: 10% 20% 20% 20% 30%;
     a:link{
         color: #ff9c70;
+        justify-self: center;
+        text-align: center;
     }
     a:visited{
         color: #ff9c70;
+        justify-self: center;
+        text-align: center;
     }
-    #footerTextLeft{
-        color: #ff9c70;
-        grid-column: 1 / span 1;
-    }
-    #footerTextLeft{
+    #firstColumn{
         color: #ff9c70;
         grid-column: 2 / span 1;
+        text-align: left;
+        justify-self: left;
+    }
+    #secondColumn{
+        color: #ff9c70;
+        grid-column: 3  / span 1;
+        text-align: left;
+        justify-self: left;
+    }
+    #thirdColumn{
+        color: #ff9c70;
+        text-align: left;
+        grid-column: 4 / span 1;
+        justify-self: left;
+    }
+    p{
+        color: #ff9c70;
+        justify-self: left;
+        margin: 0;
+        font-size: 24px;
+    }
+    img{
+        width: 80%;
+        justify-self: center;
+        margin: 0 auto;
+    }
+    #address{
+        white-space: pre-wrap;
+    }
+}
+
+#rights{
+    text-align: left;
+    font-size: 12px;
+    padding: 0px;
+    color: #ff9c70;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 700px) {
+    .title{
+        justify-self: center;
+        text-align: center;
+        font-size: 60px !important;
+        line-height: 1 !important;
+        transform: revert !important;
+        top: auto !important;
+        left: auto !important;
+        margin: auto;
+    }
+    .header{
+        width: 100%
+    }
+    #header-img{
+        width: 100%;
+        height: 100%;
     }
 }
