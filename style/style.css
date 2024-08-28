@@ -276,22 +276,32 @@ hr.solid {
     margin-left: 10%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
     .title{
         justify-self: center;
         text-align: center;
-        font-size: 60px !important;
+        font-size: 60px !important;  /*CHANGE ALL PIXEL SIZE FONTS*/
         line-height: 1 !important;
         transform: revert !important;
         top: auto !important;
         left: auto !important;
-        margin: auto;
+        margin: auto !important;
     }
     .header{
-        width: 100%
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #header-img{
-        width: 100%;
-        height: 100%;
+        width: auto !important;
+        height: 100% !important; /*WHAT IS GOING ON HERE*/
+        object-fit: cover;
+    }
+    .gallery-container{
+        display: none;
+    }
+    #menuitems{
+        display: none;
     }
 }
