@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HVHS Canteen</title>
+  <title>Contact</title>
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   
-  <link rel="stylesheet" href="/style/menustyle.css">
+  <link rel="stylesheet" href="/style/contactstyle.css">
 </head>
 <body>
 <script src="/script/script.js"></script>
@@ -21,30 +21,41 @@
   <div class="header">
     <img id="header-img" src="/img/header-img.jpg" alt="Header Image">
     <img id="header-img-mobile" src="/img/header-img-mobile.jpg" alt="Header Image">
-    <div class="title">HVHS
-      Canteen</div>
+    <div class="title">Contact</div>
   </div>
 
   <div class="content">
     <div id="contentContainer">
-
-        <form action="/script/send_email.php" method="post">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-            <br>
-           
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-           
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-           
-            <input type="submit" value="Send">
-          </form>
-
-    </div>    
+        <div class="form-container">
+            <div class="form-section">
+                <form action="/script/send_email.php" method="post">
+                    <label for="firstName">Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <br>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br>
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+    
+            <div class="vertical-divider-padding">
+                <div class="vertical-divider"></div>
+            </div>
+    
+            <div class="info-section">
+                <p>The HVHS canteen is available from Monday to Friday at intervals and lunchtimes.
+                <br><br>For any enquiries, please send us a message in the provided email form. We are dedicated to providing our students with the best service possible, and we thank you for your continued support!</p>
+            </div>
+        </div>
+    </div>
+    
 </div>
 
   <div class="footer">

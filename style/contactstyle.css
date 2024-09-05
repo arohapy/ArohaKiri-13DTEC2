@@ -99,7 +99,7 @@ body {
 #contentContainer {
     display: flex;
     flex-direction: column;
-    padding: 2% 400px;
+    padding: 2% 300px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -215,3 +215,83 @@ body {
     max-width: 350px;
     padding-bottom: 18px;
   }
+
+  #contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    font-family: 'MADEVoyager';
+    font-size: 20px;
+}
+
+.form-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    color: #5b5767;
+    display: block;
+    float: left;
+    align-self: flex-start;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #5b5767;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #5b5767;
+    color: #edffec;
+    font-family: 'MADEVoyager';
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    max-width: 150px;
+}
+
+.vertical-divider {
+    width: 2px;
+    align-self: stretch;
+    min-height: 300px;
+    background-color: #ff9c70;
+    height: 100%;
+    margin: 0 20px;
+    justify-self: center;
+}
+
+.vertical-divider-padding{
+    padding: 20px;
+}
+
+.info-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+.info-section p {
+    font-family: 'MADEVoyager';
+    font-size: 20px;
+    color: #48435c;
+    line-height: 1.6;
+}

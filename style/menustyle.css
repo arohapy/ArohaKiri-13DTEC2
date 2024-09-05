@@ -61,7 +61,6 @@ body {
 
 .content {
     background-color: #edffec;
-    grid-template-columns: 33% 33% 33%;
 }
 
 .header {
@@ -99,7 +98,7 @@ body {
 #menuitems {
     display: flex;
     flex-direction: column;
-    padding: 2% 400px;
+    padding: 2% 50px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -220,6 +219,7 @@ body {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    color: #5b5767;
     width: 100%;
     justify-self: left;
     max-width: 350px;
