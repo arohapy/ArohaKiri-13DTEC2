@@ -72,6 +72,11 @@ body {
         filter: brightness(80%);
         display: block;
     }
+    #header-img-mobile{
+        width: 100%;
+        filter: brightness(80%);
+        display: none;
+    }
     .title{
         white-space: pre-line;
         position: absolute;
@@ -277,6 +282,9 @@ hr.solid {
 }
 
 @media screen and (max-width: 950px) {
+
+    /* HEADER AND TITLE*/
+
     .title{
         justify-self: center;
         text-align: center;
@@ -295,13 +303,71 @@ hr.solid {
     }
     #header-img{
         width: auto !important;
-        height: 100% !important; /*WHAT IS GOING ON HERE*/
-        object-fit: cover;
+        height: 100% !important; 
+        object-fit: cover !important;
+        display: none !important;
     }
-    .gallery-container{
-        display: none;
+    #header-img-mobile{
+        width: 100% !important;
+        display: block !important;
     }
+
+    /* HEADER AND TITLE*/
+
+    /* CONTENT */
+
+    /*.gallery-container{
+        display: grid;
+        margin: 4% 4% 4% 4%;
+        grid-template-columns: 125px 125px 125px 125px;
+        grid-template-rows: 86px 86px 86px 86px;
+    
+        img{
+            border: 6px solid #edffec;
+        }
+        #topL{
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            width: 250px;
+        }
+        #btmL{
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 2;
+            width: 250px;
+        }
+        #topR{
+            grid-column: 3 / span 2;
+            grid-row: 1 / span 4;
+            width: 250px;
+        }
+        #btmM{
+            grid-column: 3 / span 1;
+            grid-row: 4 / span 2;
+            width: 125px;
+        }
+        #btmR{
+            grid-column: 4 / span 1;
+            grid-row: 4 / span 2;
+            width: 125px;
+        }
+    }*/
+
     #menuitems{
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        #savoury{
+            grid-column: 1 / span 1;
+        }
+        #sweets{
+            grid-column: 2 / span 1;
+        }
+        #drinks{
+            grid-column: 3 / span 1;
+        }
     }
+
+    /* CONTENT */
 }
