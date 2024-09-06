@@ -34,7 +34,7 @@ body {
     color: #ff9c70;
     text-decoration: underline;
     text-underline-offset: 7px;
-    font-size: 20px;
+    font-size: 1em;
     font-family: 'MADEVoyager';
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ body {
         position: absolute;
         color: #edffec;
         font-family: 'MADESunflower';
-        font-size: 120px;
+        font-size: 7.5em;
         top: 50%;
         left: 270px;
         line-height: 120px;
@@ -98,7 +98,7 @@ body {
 #menuitems {
     display: flex;
     flex-direction: column;
-    padding: 2% 50px;
+    padding: 15px 50px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -116,7 +116,7 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 30px;
-    font-size: 15px;
+    font-size: 0.8em;
     color: #ff9c70;
     display: grid;
     justify-items: center;
@@ -160,7 +160,7 @@ body {
         color: #ff9c70;
         justify-self: left;
         margin: 0;
-        font-size: 24px;
+        font-size: 1.4em;
     }
 
     img {
@@ -176,7 +176,7 @@ body {
 
 #rights {
     text-align: left;
-    font-size: 12px;
+    font-size: 0.8em;
     padding: 0;
     color: #ff9c70;
     margin-left: 10%;
@@ -196,12 +196,13 @@ body {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 0.8em;
     font-family: 'MadeSunflower';
     margin: 0 auto;
     max-width: 350px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin: 15px;
 }
 
 .collapsible:hover {
@@ -225,4 +226,58 @@ body {
     max-width: 350px;
     border-radius: 5px;
     font-family: 'MADEVoyager';
+}
+
+
+@media screen and (max-width: 650px) {
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    div{
+        padding-bottom: 10%;
+    }
+}
+#rights{
+    margin-left: 5%;
+}
+
+/* FOOTER */
+
+html {
+    min-width: 100%;
+}
+
+.title{
+    justify-self: center;
+    text-align: center;
+    font-size: 4em !important;  /*CHANGE ALL PIXEL SIZE FONTS*/
+    line-height: 1 !important;
+    transform: revert !important;
+    top: auto !important;
+    left: auto !important;
+    margin: auto !important;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-img{
+    width: auto !important;
+    height: 100% !important; 
+    object-fit: cover !important;
+    display: none !important;
+}
+#header-img-mobile{
+    width: 100% !important;
+    display: block !important;
+}
+
+/* HEADER AND TITLE*/
+
+
 }

@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="/style/contactstyle.css">
 </head>
 <body>
-<script src="/script/script.js"></script>
   <div class="navbar">
     <a href="/index.html" class="bar-item nav-logo">
       <img alt="HVHS Logo image." src="/img/hvhslogo.png">
@@ -28,30 +27,26 @@
     <div id="contentContainer">
         <div class="form-container">
             <div class="form-section">
-                <form action="/script/send_email.php" method="post">
-                    <label for="firstName">Name</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                    <br>
-    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-    
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <br>
-    
-                    <input type="submit" value="Submit">
-                </form>
+                <button id="form-btn" onclick="btn_function();">Open Form</button>
+
+                <div id="form-modal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="span_function();">&times;</span>
+                      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPFS3mxfzLXgYGIa1CtduYpM-cCOly1aLE8zRM1wUy5w2Snw/viewform?embedded=true" width="640" height="782" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                  
+                  </div>
             </div>
-    
+
+        
             <div class="vertical-divider-padding">
                 <div class="vertical-divider"></div>
             </div>
+            <hr class="solid">
     
             <div class="info-section">
                 <p>The HVHS canteen is available from Monday to Friday at intervals and lunchtimes.
-                <br><br>For any enquiries, please send us a message in the provided email form. We are dedicated to providing our students with the best service possible, and we thank you for your continued support!</p>
+                <br><br>For any enquiries, please send us a message in the provided google form. We are dedicated to providing our students with the best service possible, and we thank you for your continued support!</p>
             </div>
         </div>
     </div>
@@ -92,4 +87,5 @@
     <p>© 2024 HUTT VALLEY HIGH SCHOOL | ALL RIGHTS RESERVED | WEBSITE DESIGN & CODING BY AROHA KIRI</p>
   </div>
 </body>
+<script src="/script/script.js"></script>
 </html>

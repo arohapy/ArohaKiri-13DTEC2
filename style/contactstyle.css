@@ -34,7 +34,7 @@ body {
     color: #ff9c70;
     text-decoration: underline;
     text-underline-offset: 7px;
-    font-size: 20px;
+    font-size: 1em;
     font-family: 'MADEVoyager';
     display: flex;
     align-items: center;
@@ -86,7 +86,7 @@ body {
         position: absolute;
         color: #edffec;
         font-family: 'MADESunflower';
-        font-size: 120px;
+        font-size: 7.5em;
         top: 50%;
         left: 270px;
         line-height: 120px;
@@ -99,11 +99,15 @@ body {
 #contentContainer {
     display: flex;
     flex-direction: column;
-    padding: 2% 300px;
+    padding: 2%;
     justify-content: center;
     align-items: center;
     position: relative;
     text-align: center;
+}
+
+hr{
+    display: none;
 }
 
 
@@ -117,7 +121,7 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 30px;
-    font-size: 15px;
+    font-size: 0.8em;
     color: #ff9c70;
     display: grid;
     justify-items: center;
@@ -161,7 +165,7 @@ body {
         color: #ff9c70;
         justify-self: left;
         margin: 0;
-        font-size: 24px;
+        font-size: 1.4em;
     }
 
     img {
@@ -177,7 +181,7 @@ body {
 
 #rights {
     text-align: left;
-    font-size: 12px;
+    font-size: 0.75em;
     padding: 0;
     color: #ff9c70;
     margin-left: 10%;
@@ -195,7 +199,7 @@ body {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 0.8em;
     width: 100%;
     margin: 0 auto;
     max-width: 350px;
@@ -231,12 +235,35 @@ body {
     text-align: left;
     width: 100%;
     font-family: 'MADEVoyager';
-    font-size: 20px;
+    font-size: 1.4em;
+}
+
+#form-btn {
+    background-color: #5b5767; 
+    color: #ff9c70; 
+    font-family: 'MADEVoyager';
+    font-size: 0.8em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    width: 200px; 
+    text-align: center;
+}
+
+#form-btn:hover {
+    background-color: #48435c; 
+    color: #ff9c70; 
 }
 
 .form-section {
     flex: 1;
     max-width: 400px;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-section form {
@@ -245,30 +272,40 @@ body {
     align-items: center;
 }
 
-form label {
-    color: #5b5767;
-    display: block;
-    float: left;
-    align-self: flex-start;
-}
-
-form input, form textarea {
-    padding: 10px;
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
     width: 100%;
-    max-width: 400px;
-    border: 1px solid #5b5767;
-    border-radius: 4px;
-}
-
-form input[type="submit"] {
-    background-color: #5b5767;
-    color: #edffec;
-    font-family: 'MADEVoyager';
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-    border: none;
-    padding: 10px 20px;
-    max-width: 150px;
-}
+  }
 
 .vertical-divider {
     width: 2px;
@@ -291,7 +328,75 @@ form input[type="submit"] {
 
 .info-section p {
     font-family: 'MADEVoyager';
-    font-size: 20px;
+    font-size: 0.8em;
     color: #48435c;
     line-height: 1.6;
+}
+
+
+@media screen and (max-width: 750px) {
+    html {
+        min-width: 100%;
+    }
+
+    .title{
+        justify-self: center;
+        text-align: center;
+        font-size: 4em !important;  /*CHANGE ALL PIXEL SIZE FONTS*/
+        line-height: 1 !important;
+        transform: revert !important;
+        top: auto !important;
+        left: auto !important;
+        margin: auto !important;
+    }
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #header-img{
+        width: auto !important;
+        height: 100% !important; 
+        object-fit: cover !important;
+        display: none !important;
+    }
+    #header-img-mobile{
+        width: 100% !important;
+        display: block !important;
+    }
+
+    /* HEADER AND TITLE*/
+
+
+    /* FOOTER */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        div{
+            padding-bottom: 10%;
+        }
+    }
+    #rights{
+        margin-left: 5%;
+    }
+    /* FOOTER */
+
+    /* contact page media query stuff BELOW */
+    .form-container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .vertical-divider{
+        display: none;
+    }
+    .form-container{
+        flex-direction: column;
+    }
+    hr{
+        display: block;
+        border-top: 3px solid #ff9c70;
+        width: 50%;
+    }
 }

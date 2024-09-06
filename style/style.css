@@ -32,7 +32,7 @@ body {
     color: #ff9c70;
     text-decoration: underline;
     text-underline-offset: 7px;
-    font-size: 20px;
+    font-size: 1em;
     font-family: 'MADEVoyager';
     display: flex;
     align-items: center;
@@ -82,10 +82,10 @@ body {
         position: absolute;
         color: #edffec;
         font-family: 'MADESunflower';
-        font-size: 120px;
+        font-size: 7.5em;
         top: 50%;
         left: 270px;
-        line-height: 120px;
+        line-height: 100px;
         transform: translate(-50%, -50%);
     }
 } 
@@ -121,7 +121,7 @@ body {
 }
 
 .menutext{
-    font-size: 45px;
+    font-size: 2.8em;
     font-family: 'MADESunflower';
     color: #edffec;
     position: absolute;
@@ -140,7 +140,7 @@ body {
 .menu-container{
     position: relative;
     text-align: center;
-    padding: 40px 60px 30px;
+    padding: 40px 1.5% 30px;
     width: 250px;
     height: 250px;
 }
@@ -162,7 +162,7 @@ hr.solid {
     margin: 4% 4% 4% 20%;
     white-space: pre-line;
     color: #5b5767;
-    font-size: 24px;
+    font-size: 1.2em;
     font-family: 'MADEVoyager';
     letter-spacing: 1px;
     line-height: 40px;
@@ -223,7 +223,7 @@ hr.solid {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 30px;
-    font-size: 15px;
+    font-size: 0.8em;
     color: #ff9c70;
     display: grid;
     justify-items: center;
@@ -261,7 +261,7 @@ hr.solid {
         color: #ff9c70;
         justify-self: left;
         margin: 0;
-        font-size: 24px;
+        font-size: 1.4em;
     }
     img{
         width: 80%;
@@ -275,20 +275,24 @@ hr.solid {
 
 #rights{
     text-align: left;
-    font-size: 12px;
+    font-size: 0.8em;
     padding: 0px;
     color: #ff9c70;
     margin-left: 10%;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 750px) {
 
     /* HEADER AND TITLE*/
+
+    html {
+        min-width: 100%;
+    }
 
     .title{
         justify-self: center;
         text-align: center;
-        font-size: 60px !important;  /*CHANGE ALL PIXEL SIZE FONTS*/
+        font-size: 4em !important;  /*CHANGE ALL PIXEL SIZE FONTS*/
         line-height: 1 !important;
         transform: revert !important;
         top: auto !important;
@@ -316,41 +320,31 @@ hr.solid {
 
     /* CONTENT */
 
-    /*.gallery-container{
-        display: grid;
-        margin: 4% 4% 4% 4%;
-        grid-template-columns: 125px 125px 125px 125px;
-        grid-template-rows: 86px 86px 86px 86px;
-    
-        img{
-            border: 6px solid #edffec;
-        }
-        #topL{
-            grid-column: 1 / span 2;
-            grid-row: 1 / span 2;
-            width: 250px;
-        }
-        #btmL{
-            grid-column: 1 / span 2;
-            grid-row: 3 / span 2;
-            width: 250px;
-        }
-        #topR{
-            grid-column: 3 / span 2;
-            grid-row: 1 / span 4;
-            width: 250px;
-        }
-        #btmM{
-            grid-column: 3 / span 1;
-            grid-row: 4 / span 2;
-            width: 125px;
-        }
-        #btmR{
-            grid-column: 4 / span 1;
-            grid-row: 4 / span 2;
-            width: 125px;
-        }
-    }*/
+    .content{
+        padding-top: 10%;
+    }
+
+    .gallery-container{
+        display: none !important;
+    }
+
+    .menu-container{
+        padding: 8px;
+        width: auto;
+        height: auto;
+    }
+
+    .menu{
+        border-radius: 0;
+        width: 300px;
+        height: 90px;
+        object-fit: cover;
+    }
+
+    .main-content{
+        display: flex;
+        margin-bottom: 25px;
+    }
 
     #menuitems{
         display: flex;
@@ -358,16 +352,29 @@ hr.solid {
         align-items: center;
         position: relative;
         text-align: center;
-        #savoury{
-            grid-column: 1 / span 1;
-        }
-        #sweets{
-            grid-column: 2 / span 1;
-        }
-        #drinks{
-            grid-column: 3 / span 1;
-        }
+        flex-direction: column;
+    }
+
+    #paragraph{
+        margin: 10%;
+        margin-top: 0%;
+        line-height: 37px;
     }
 
     /* CONTENT */
+
+    /* FOOTER */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        div{
+            padding-bottom: 10%;
+        }
+    }
+    #rights{
+        margin-left: 5%;
+    }
+
+    /* FOOTER */
 }

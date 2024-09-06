@@ -16,3 +16,24 @@ function displayContent(elementId) {
         console.error('Element with ID ' + elementId + ' not found');
     }
 }
+
+var modal = document.getElementById("form-modal");
+
+var btn = document.getElementById("form-btn");
+
+var span = document.getElementsByClassName("close")[0];
+
+function btn_function() {
+  modal.style.display = "block";
+  console.log('button clicked')
+}
+
+function span_function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
