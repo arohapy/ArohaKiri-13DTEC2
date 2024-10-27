@@ -1,0 +1,115 @@
+<!-- 
+MODULENAME: menu.html
+WRITTEN BY AROHA KIRI 2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+  <link rel="stylesheet" href="/style/menustyle.css">
+</head>
+<body>
+<script src="/script/script.js"></script>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="/index.html" class="bar-item nav-logo">
+      <img alt="HVHS Logo image." src="/img/hvhslogo.png">
+    </a>
+    <!--<a id="menu" class="bar-item nav-drop">Menu</a>-->
+    <div class="dropdown bar-item">
+      <button class=" dropbtn">Menu
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="html/savoury.html" class="bar-item">Savoury</a>
+        <a href="html/sweets.html" class="bar-item">Sweets</a>
+        <a href="html/drinks.html" class="bar-item">Drinks</a>
+      </div>
+    </div>
+    <a href="html/contact.html" class="bar-item nav-drop">Contact</a>
+  </div>
+  <!-- Navbar -->
+
+<!-- Header -->
+  <div class="header">
+    <img id="header-img" src="/img/header-img.jpg" alt="Header Image">
+    <img id="header-img-mobile" src="/img/header-img-mobile.jpg" alt="Header Image">
+    <div class="title">Menu</div>
+  </div>
+<!-- Header -->
+
+
+<!-- Menu -->
+  <div class="content">
+    <div id="menuitems">
+        <!-- Iced Coffee -->
+              <button type="button" onclick="displayContent('IcedCoffee')" class="collapsible">$ 4 - Barista Bros. Iced Coffee</button>
+              <div id="IcedCoffee" class="collapsiblecontent">
+                <ul>
+                  <li>Calories: 41</li>
+                  <li>Protein: 2.5g</li>
+                  <li>Fat: 1.4g</li>
+                  <li>Carbohydrates: 4.3g</li>
+                </ul>
+                <div><img alt="Iced Coffee" src="/img/menuitems/menuItem_IcedCoffee.jpg"></div> <!-- Div prevents white space between border and padding-->
+              </div>
+        <!-- Iced Coffee -->
+
+        <!-- Up & Go -->
+              <button type="button" onclick="displayContent('UpAndGo')" class="collapsible">$ 3.00 - Up & Go</button>
+              <div id="UpAndGo" class="collapsiblecontent">
+                <ul>
+                  <li>Calories: 282</li>
+                  <li>Protein: 11.7</li>
+                  <li>Fat: 6.1g</li>
+                  <li>Carbohydrates: 39.9g</li>
+                </ul>
+                <div><img alt="Up & Go" src="/img/menuitems/menuItem_UpAndGo.jpg"></div> <!-- Div prevents white space between border and padding-->
+              </div>
+        <!-- Up & Go -->
+    </div>    
+</div>
+<!-- Menu -->
+
+<!-- Footer -->
+  <div class="footer">
+    <div id="firstColumn">
+      <p>Address</p>
+      <br>
+      <a>84-114</a>
+      <br>
+      <a>Woburn Road</a>
+      <br>
+      <a>Woburn</a>
+      <br>
+      <a>5010</a>
+      <br>
+      <a>Lower Hutt</a>
+    </div>
+
+    <div id="secondColumn">
+      <p>Contact</p>
+      <br>
+      <a href="tel:+04 566 4584">04 566 4584</a>
+      <br>
+      <a href="mailto:office@hvhs.school.nz">office@hvhs.school.nz</a>
+    </div>
+
+    <div id="thirdColumn">
+      <p>Admin</p>
+      <br>
+      <a href="html/admin.html">Portal Login</a>
+    </div>
+  </div>
+  <div id="rights">
+    <br>
+    <p>© 2024 HUTT VALLEY HIGH SCHOOL | ALL RIGHTS RESERVED | WEBSITE DESIGN & CODING BY AROHA KIRI</p>
+  </div>
+  <!-- Footer -->
+</body>
+</html>

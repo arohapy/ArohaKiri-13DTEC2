@@ -1,3 +1,8 @@
+<!-- 
+MODULENAME: contact.html
+WRITTEN BY AROHA KIRI 2024
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,21 +13,35 @@
   
   <link rel="stylesheet" href="/style/contactstyle.css">
 </head>
-<body>
+  <!-- Navbar -->
   <div class="navbar">
     <a href="/index.html" class="bar-item nav-logo">
       <img alt="HVHS Logo image." src="/img/hvhslogo.png">
     </a>
-    <a href="menu.html" class="bar-item nav-drop">Menu</a>
-    <a href="contact.html" class="bar-item nav-drop">Contact</a>
+    <!--<a id="menu" class="bar-item nav-drop">Menu</a>-->
+    <div class="dropdown bar-item">
+      <button class=" dropbtn">Menu
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="html/savoury.html" class="bar-item">Savoury</a>
+        <a href="html/sweets.html" class="bar-item">Sweets</a>
+        <a href="html/drinks.html" class="bar-item">Drinks</a>
+      </div>
+    </div>
+    <a href="html/contact.html" class="bar-item nav-drop">Contact</a>
   </div>
+  <!-- Navbar -->
 
+<!-- Header -->
   <div class="header">
     <img id="header-img" src="/img/header-img.jpg" alt="Header Image">
     <img id="header-img-mobile" src="/img/header-img-mobile.jpg" alt="Header Image">
     <div class="title">Contact</div>
   </div>
+<!-- Header -->
 
+<!-- Form and Paragraph -->
   <div class="content">
     <div id="contentContainer">
         <div class="form-container">
@@ -50,9 +69,10 @@
             </div>
         </div>
     </div>
-    
 </div>
+<!-- Form and Paragraph -->
 
+<!-- Footer -->
   <div class="footer">
     <div id="firstColumn">
       <p>Address</p>
@@ -86,6 +106,7 @@
     <br>
     <p>© 2024 HUTT VALLEY HIGH SCHOOL | ALL RIGHTS RESERVED | WEBSITE DESIGN & CODING BY AROHA KIRI</p>
   </div>
+  <!-- Footer -->
 </body>
 <script src="/script/script.js"></script>
 </html>

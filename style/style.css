@@ -55,6 +55,49 @@ body {
     background-color: #48435c;
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #ff9c70;
+  padding: 0px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5b5767;
+  min-width: 160px;
+  z-index: 1;
+  top: 7.4%;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #ff9c70;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #48435c;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 /* NAVBAR */
 
 /* GRID */

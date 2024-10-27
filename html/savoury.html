@@ -1,40 +1,122 @@
+<!-- 
+MODULENAME: menu.html
+WRITTEN BY AROHA KIRI 2024
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HVHS Canteen</title>
+  <title>Menu</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
   <link rel="stylesheet" href="/style/menustyle.css">
 </head>
+
 <body>
+  <script src="/script/script.js"></script>
+  <!-- Navbar -->
   <div class="navbar">
     <a href="/index.html" class="bar-item nav-logo">
       <img alt="HVHS Logo image." src="/img/hvhslogo.png">
     </a>
-    <a href="menu.html" class="bar-item nav-drop">Menu</a>
-    <a href="contact.html" class="bar-item nav-drop">Contact</a>
+    <!--<a id="menu" class="bar-item nav-drop">Menu</a>-->
+    <div class="dropdown bar-item">
+      <button class=" dropbtn">Menu
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="html/savoury.html" class="bar-item">Savoury</a>
+        <a href="html/sweets.html" class="bar-item">Sweets</a>
+        <a href="html/drinks.html" class="bar-item">Drinks</a>
+      </div>
+    </div>
+    <a href="html/contact.html" class="bar-item nav-drop">Contact</a>
   </div>
+  <!-- Navbar -->
 
+  <!-- Header -->
   <div class="header">
     <img id="header-img" src="/img/header-img.jpg" alt="Header Image">
-    <div class="title">MENU</div>
+    <img id="header-img-mobile" src="/img/header-img-mobile.jpg" alt="Header Image">
+    <div class="title">Menu</div>
   </div>
+  <!-- Header -->
 
+
+  <!-- Menu -->
   <div class="content">
+    <div id="menuitems">
+      
+<!-- Sausage Roll -->
+      <button type="button" onclick="displayContent('sausageRoll')" class="collapsible">$ 4 - Sausage Roll</button>
+      <div id="sausageRoll" class="collapsiblecontent">
+        <ul>
+          <li>Calories: 320</li>
+          <li>Protein: 8.5g</li>
+          <li>Fat: 23g</li>
+          <li>Carbohydrates: 19g</li>
+        </ul>
+        <div><img alt="Sausage Roll" src="/img/menuitems/menuItem_SausageRoll.jpg"></div> <!-- Div prevents white space between border and padding-->
+        <!-- SAUSAGE ROLL IMAGE CREDIT: https://commons.wikimedia.org/wiki/File:John_Campbell%27s_Irish_Bakery_Sausage_Roll_%2834278149014%29.jpg -->
+      </div>
+<!-- Sausage Roll -->
+      
+<!-- Wedges -->
+      <button type="button" onclick="displayContent('Wedges')" class="collapsible">$ 3.50 - Wedges</button>
+      <div id="Wedges" class="collapsiblecontent">
+        <ul>
+          <li>Calories: 370</li>
+          <li>Protein: 8.1g</li>
+          <li>Fat: 6.6g</li>
+          <li>Carbohydrates: 78g</li>
+        </ul>
+        <div><img alt="Wedges" src="/img/menuitems/menuItem_Wedges.jpg"></div> <!-- Div prevents white space between border and padding-->
+      </div>
+<!-- Wedges -->
 
-  <div class="items">
+      
+    </div>
   </div>
+  <!-- Menu -->
 
-  </div>
+  <!-- Footer -->
   <div class="footer">
-    <div id="footerTextLeft">
-      <a href="tel:+04 566 4584">04 566 4584</a>
-    <br>
-      <a href="https://maps.app.goo.gl/aBWAXtjjggGaTGyz6">84-114 Woburn Road, Woburn, 5010, Lower Hutt</a>
+    <div id="firstColumn">
+      <p>Address</p>
+      <br>
+      <a>84-114</a>
+      <br>
+      <a>Woburn Road</a>
+      <br>
+      <a>Woburn</a>
+      <br>
+      <a>5010</a>
+      <br>
+      <a>Lower Hutt</a>
     </div>
-    <div id="footerTextRight">
-      <a href="html/admin.html">Admin login</a>
+
+    <div id="secondColumn">
+      <p>Contact</p>
+      <br>
+      <a href="tel:+04 566 4584">04 566 4584</a>
+      <br>
+      <a href="mailto:office@hvhs.school.nz">office@hvhs.school.nz</a>
+    </div>
+
+    <div id="thirdColumn">
+      <p>Admin</p>
+      <br>
+      <a href="html/admin.html">Portal Login</a>
     </div>
   </div>
+  <div id="rights">
+    <br>
+    <p>© 2024 HUTT VALLEY HIGH SCHOOL | ALL RIGHTS RESERVED | WEBSITE DESIGN & CODING BY AROHA KIRI</p>
+  </div>
+  <!-- Footer -->
 </body>
+
 </html>
